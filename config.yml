@@ -1,0 +1,16 @@
+title: Test_113
+description: Курс программирования
+template:
+  repo: test_113-template
+  name: test_113
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
